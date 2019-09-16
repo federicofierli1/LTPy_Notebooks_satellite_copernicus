@@ -21,7 +21,7 @@ reprocessed and regridded data
 * [Copernicus Sentinel-5P](./1_ltpy_v01_atmospheric_composition_overview.ipynb#sentinel_5p) 
 data
 
-# Course structure
+## Course structure
 The course follows a modular approach and offers the following modules:
 
 * **1 - Overview of data and data access systems**
@@ -38,7 +38,7 @@ Optional: the module "[**Introduction to Python and Project Jupyter**](./0_ltpy_
 gives you a head start to the Python and Jupyter knowledge you might find 
 helpful in order to follow this course.
 
-# Learning outcomes
+## Learning outcomes
 The course is designed for `medium-level users`, who have basic Python knowledge 
 and understanding of `Atmospheric composition data`.
 
@@ -49,7 +49,7 @@ After the course, you should have:
 visualise large volumes of Earth Observation data
 * an idea about different data application areas
 
-# How to use this course material
+## How to use this course material
 This course material is made available via EUMETSAT's eo-lab training space on
 GitLab. While GitLab offers integrated rendering of Jupyter Notebooks, it's 
 rendering capabilities is limited. Thus, the notebooks, if directly rendered on
@@ -68,7 +68,7 @@ reproduce the set up on your local machine.
 [WEkEO account](https://www.wekeo.eu/user/register) and then log into the
 [LTPy Jupyterhub](https://ltpy.adamplatform.eu).
 
-# Technical requirements
+## Technical requirements
 The notebooks have been developed under `Python3`. 
 
 The following `Python packages` will be needed in order to reproduce the 
