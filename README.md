@@ -34,7 +34,7 @@ The course follows a modular approach and offers the following modules:
  * [3.1 - AC SAF Level 2 case studies](./31_ltpy_v01_AC_SAF_L2_case_study.ipynb)
  * [3.2 - AC SAF Level 3 workflow examples](./32_ltpy_v01_AC_SAF_L3_case_study.ipynb)
 
-Optional: the module "[**Introduction to Python and Project Jupyter**](./0_ltpy_v01_Intro_to_Python_and_Jupyter,ipynb)" 
+Optional: the module "[**Introduction to Python and Project Jupyter**](./0_ltpy_v01_Intro_to_Python_and_Jupyter.ipynb)" 
 gives you a head start to the Python and Jupyter knowledge you might find 
 helpful in order to follow this course.
 
@@ -86,8 +86,8 @@ The following `data` are required to be downloaded:
 |--- |---|---|---|---|
 |GOME-2 - Metop-2a|Level-2 Offline| `Nitrogen Dioxide`  |`18-Aug-2019` <br> `19-Aug-2019` <br> `22-Aug-2019`| 222 MB <br> 214 MB <br> 212 MB |
 |GOME-2 - Metop-2b|Level-2 Offline| `Nitrogen Dioxide`  |`18-Aug-2019` <br> `19-Aug-2019` <br> `22-Aug-2019`| 221 MB <br> 219 MB <br> 232 MB |
-|GOME-2 - Metop-2a|Level-2 Offline| `Nitrogen Dioxide`  |`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 222 MB <br> 214 MB <br> 212 MB |
-|GOME-2 - Metop-2b|Level-2 Offline| `Nitrogen Dioxide`  |`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 222 MB <br> 214 MB <br> 212 MB |
+|GOME-2 - Metop-2a|Level-2 Offline| `Nitrogen Dioxide`  |`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 213 MB <br> 218 MB <br> 215 MB |
+|GOME-2 - Metop-2b|Level-2 Offline| `Nitrogen Dioxide`  |`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 230 MB <br> 219 MB <br> 219 MB |
 |GOME-2 - Metop-2a|Level-3 Data record| `Nitrogen Dioxide`  |`Feb-2007 - Dec-2012`| 4.78 GB |
 |GOME-2 - Metop-2b|Level-3 Data record| `Nitrogen Dioxide`  |`Jan-2013 - Nov-2017`| 4 GB |
 |GOME-2 - Metop-2b|Level-3 Data record| `Tropical tropospheric Ozone`  |`Jan-Dec 2018`| 5.1 MB |
