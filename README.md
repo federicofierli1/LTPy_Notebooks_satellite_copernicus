@@ -93,4 +93,4 @@ The following `data` are required to be downloaded:
 |GOME-2 - Metop-2b|Level-3 Data record| `Tropical tropospheric Ozone`  |`Jan-Dec 2018`| 5.1 MB |
 |Sentinel-5P TROPOMI|Level-2 Offline| `Nitrogen Dioxide`  |`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 1.35 GB <br> 1.37 GB <br> " " |
 |Sentinel-5P TROPOMI|Level-2 Offline| `Nitrogen Dioxide`  |`19-Aug-2019` <br> `22-Aug-2019`| 1.82 GB <br> 1.37 GB |
-|Total | | | | 16.7 GB |
+| | | | **Total** | **16.7 GB** |
