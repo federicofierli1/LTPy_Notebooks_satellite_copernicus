@@ -81,4 +81,14 @@ LTPy examples on your local setup:
 * [cartopy](https://scitools.org.uk/cartopy/docs/latest/)
 
 The following `data` are required to be downloaded:
-* GOME-2 
+| Satellite | Data type | Parameter | Temporal coverage | Data Volume
+|--- |---|---|---|---|
+|GOME-2 - Metop-2a|Level-2 Offline| `Nitrogen Dioxide`  |`18-Aug-2019` <br> `19-Aug-2019` <br> `22-Aug-2019`| 222 MB <br> 214 MB <br> 212 MB |
+|GOME-2 - Metop-2b|Level-2 Offline| `Nitrogen Dioxide`  |`18-Aug-2019` <br> `19-Aug-2019` <br> `22-Aug-2019`| 221 MB <br> 219 MB <br> 232 MB |
+|GOME-2 - Metop-2a|Level-2 Offline| `Nitrogen Dioxide`  |`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 222 MB <br> 214 MB <br> 212 MB |
+|GOME-2 - Metop-2b|Level-2 Offline| `Nitrogen Dioxide`  |`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 222 MB <br> 214 MB <br> 212 MB |
+|GOME-2 - Metop-2a|Level-3 Data record| `Nitrogen Dioxide`  |`Feb-2007 - Dec-2012`| 4.78 GB |
+|GOME-2 - Metop-2b|Level-3 Data record| `Nitrogen Dioxide`  |`Jan-2013 - Nov-2017`| 4 GB |
+|GOME-2 - Metop-2b|Level-3 Data record| `Tropical tropospheric Ozone`  |`Jan-Dec 2018`| 5.1 MB |
+|Sentinel-5P TROPOMI|Level-2 Offline| `Nitrogen Dioxide`  |`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 1.35 GB <br> 1.37 GB <br> " " |
+|Sentinel-5P TROPOMI|Level-2 Offline| `Nitrogen Dioxide`  |`19-Aug-2019` <br> `22-Aug-2019`| 1.82 GB <br> 1.37 GB |
