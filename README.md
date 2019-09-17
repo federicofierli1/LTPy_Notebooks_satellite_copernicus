@@ -7,8 +7,10 @@ data visualisation as well as case studies of satellite- and model-based data
 on Atmospheric Composition.
 
 The course is based on [Jupyter notebooks](https://jupyter.org/), which allow 
-for a high-level of interactive learning, as code, text description and 
-visualisation is combined in one place.
+for a high-level of interactive learning, as code, text description and visualisation 
+is combined in on place. If you have not worked with `Jupyter Notebooks` before, 
+you can look at the module [0 - Introduction to Python and Project Jupyter](./0_ltpy_v01_Intro_to_Python_and_Jupyter.ipynb) 
+to get a short introduction to Jupyter notebooks and their benefits.
 
 ## Data on Atmospheric Composition
 This course features the following data:
@@ -24,19 +26,21 @@ data
 ## Course structure
 The course follows a modular approach and offers the following modules:
 
+* ***0 - [Introduction to Python and Project Jupyter](./0_ltpy_v01_Intro_to_Python_and_Jupyter.ipynb)*** *(optional)*
+
 * **1 - Overview of data and data access systems**
  * [1 - Atmospheric Composition data overview and acccess](./1_ltpy_v01_atmospheric_composition_overview.ipynb)
-* **2 - Load and browse data**
- * [2.1 - AC SAF Level 2 data](./21_ltpy_v01_AC_SAF_L2_data.ipynb)
+
+* **2 - Load, browse and pre-process data**
+ * [2.1.1 - AC SAF Level 2 data - Load and browse](./211_ltpy_v01_AC_SAF_L2_data.ipynb)
+ * [2.1.2 - AC SAF Level 2 data - pre-process](./212_ltpy_v01_AC_SAF_L2_data.ipynb)
  * [2.2 - AC SAF Level 3 data](./22_ltpy_v01_AC_SAF_L3_data_products.ipynb)
  * [2.3 - Sentinel-5p Level 2 data](./23_ltpy_v01_Sentinel5p_L2_data.ipynb)
+
 * **3 - Data workflows and case studies**
  * [3.1 - AC SAF Level 2 case studies](./31_ltpy_v01_AC_SAF_L2_case_study.ipynb)
  * [3.2 - AC SAF Level 3 workflow examples](./32_ltpy_v01_AC_SAF_L3_case_study.ipynb)
 
-Optional: the module "[**Introduction to Python and Project Jupyter**](./0_ltpy_v01_Intro_to_Python_and_Jupyter.ipynb)" 
-gives you a head start to the Python and Jupyter knowledge you might find 
-helpful in order to follow this course.
 
 ## Learning outcomes
 The course is designed for `medium-level users`, who have basic Python knowledge 
@@ -61,36 +65,40 @@ There are several ways how to use these modules:
 notebooks. Copy paste the link to the notebook [index_ltpy_v01.ipynb](./index_ltpy_v01.ipynb) 
 into nbviewer.
 * 2. **Clone this repo** and run the notebooks on your local Jupyter notebook
-server. If you prefer this solution, you have to reproduce the settings. Under 
-the "Technical requirements" section, you find more information on how to
-reproduce the set up on your local machine.
+server. If you prefer this solution, you have to reproduce the settings. The following
+section provides you more information on how to reproduce the set up on your 
+local machine.
 * 3. **LTPy JupyterHub** - You can create a 
 [WEkEO account](https://www.wekeo.eu/user/register) and then log into the
 [LTPy Jupyterhub](https://ltpy.adamplatform.eu).
 
-## Technical requirements
-The notebooks have been developed under `Python3`. 
+## Reproduce LTPy on Atmospheric Compostion data locally
+In case you wish to reproduce the course modules on your local setup, the 
+following Python version and Python packages will be required:
 
-The following `Python packages` will be needed in order to reproduce the 
-LTPy examples on your local setup:
-* [xarray](http://xarray.pydata.org/en/stable/index.html)
-* [netCDF4](https://unidata.github.io/netcdf4-python/netCDF4/index.html)
-* [h5py](https://pypi.org/project/h5py/)
-* [numpy](https://numpy.org/)
-* [matplotlib](https://matplotlib.org/)
-* [cartopy](https://scitools.org.uk/cartopy/docs/latest/)
+* Python version: **Python3**
+* Python packages:
+ * [xarray](http://xarray.pydata.org/en/stable/index.html)
+ * [netCDF4](https://unidata.github.io/netcdf4-python/netCDF4/index.html)
+ * [h5py](https://pypi.org/project/h5py/)
+ * [numpy](https://numpy.org/)
+ * [matplotlib](https://matplotlib.org/)
+ * [cartopy](https://scitools.org.uk/cartopy/docs/latest/)
 
-The following `data` are required to be downloaded:
+Python packages can be installed with `conda install <python_package_name>` or 
+`pip install <python_pacakage_name>`
 
-| Satellite | Data type | Parameter | Temporal coverage | Data Volume
+The following **data on atmospheric composition** have to be downloaded:
+
+| Satellite | Data type | Parameter | Temporal coverage | Data Volume in GB
 |--- |---|---|---|---|
-|GOME-2 - Metop-2a|Level-2 Offline| `Nitrogen Dioxide`  |`18-Aug-2019` <br> `19-Aug-2019` <br> `22-Aug-2019`| 222 MB <br> 214 MB <br> 212 MB |
-|GOME-2 - Metop-2b|Level-2 Offline| `Nitrogen Dioxide`  |`18-Aug-2019` <br> `19-Aug-2019` <br> `22-Aug-2019`| 221 MB <br> 219 MB <br> 232 MB |
-|GOME-2 - Metop-2a|Level-2 Offline| `Nitrogen Dioxide`  |`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 213 MB <br> 218 MB <br> 215 MB |
-|GOME-2 - Metop-2b|Level-2 Offline| `Nitrogen Dioxide`  |`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 230 MB <br> 219 MB <br> 219 MB |
-|GOME-2 - Metop-2a|Level-3 Data record| `Nitrogen Dioxide`  |`Feb-2007 - Dec-2012`| 4.78 GB |
-|GOME-2 - Metop-2b|Level-3 Data record| `Nitrogen Dioxide`  |`Jan-2013 - Nov-2017`| 4 GB |
-|GOME-2 - Metop-2b|Level-3 Data record| `Tropical tropospheric Ozone`  |`Jan-Dec 2018`| 5.1 MB |
-|Sentinel-5P TROPOMI|Level-2 Offline| `Nitrogen Dioxide` - US / Canada|`13-Aug-2018` <br> `16-Aug-2018` <br> `18-Aug-2018`| 1.35 GB <br> 1.37 GB <br> - |
-|Sentinel-5P TROPOMI|Level-2 Offline| `Nitrogen Dioxide` - South America  |`19-Aug-2019` <br> `22-Aug-2019`| 1.82 GB <br> 1.37 GB |
-| | | | **Total** | **17.375 GB** |
+|GOME-2 - Metop-2a|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |18-Aug-2019<br>19-Aug-2019<br>22-Aug-2019| 0.222<br>0.214<br>0.212 |
+|GOME-2 - Metop-2b|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |18-Aug-2019<br>19-Aug-2019<br>22-Aug-2019| 0.221<br>0.219<br>0.232 |
+|GOME-2 - Metop-2a|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |13-Aug-2018<br>16-Aug-2018<br>18-Aug-2018| 0.213<br>0.218<br>0.215 |
+|GOME-2 - Metop-2b|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |13-Aug-2018<br>16-Aug-2018<br>18-Aug-2018| 0.230<br>0.219<br>0.219 |
+|GOME-2 - Metop-2a|[Level-3 Data record](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |Feb-2007<br>to Dec-2012| 4.78 |
+|GOME-2 - Metop-2b|[Level-3 Data record](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |Jan-2013<br>to Nov-2017| 4.0 |
+|GOME-2 - Metop-2b|[Level-3 Data record](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Tropical tropospheric Ozone`  |Jan-Dec 2018| 0.0051 |
+|Sentinel-5P TROPOMI|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#sentinel5p_access)| `Nitrogen Dioxide` - US/Canada  |13-Aug-2018<br>16-Aug-2018<br>18-Aug-2018| 1.35<br>1.37<br> - |
+|Sentinel-5P TROPOMI|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#sentinel5p_access)| `Nitrogen Dioxide` - South America  |19-Aug-2019<br>22-Aug-2019| 1.82<br>1.37 |
+| - | - | - | **Total**| **17.375 GB**|
