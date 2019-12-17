@@ -6,40 +6,62 @@ course covers modules on data access, data handling and processing,
 data visualisation as well as case studies of satellite- and model-based data 
 on Atmospheric Composition.
 
-The course is based on [Jupyter notebooks](https://jupyter.org/), which allow 
-for a high-level of interactive learning, as code, text description and visualisation 
-is combined in on place. If you have not worked with `Jupyter Notebooks` before, 
-you can look at the module [0 - Introduction to Python and Project Jupyter](./0_ltpy_v01_Intro_to_Python_and_Jupyter.ipynb) 
+The course is based on [Jupyter notebooks](https://jupyter.org/), which allow
+a high-level of interactive learning, as code, text description and visualisation 
+is combined in one place. If you have not worked with `Jupyter Notebooks` before, 
+you can look at the module [0 - Introduction to Python and Project Jupyter](./0_ltpy_Intro_to_Python_and_Jupyter.ipynb) 
 to get a short introduction to Jupyter notebooks and their benefits.
 
 ## Data on Atmospheric Composition
 This course features the following data:
 
 This course features the following data:
-* [AC SAF Level-2 GOME-2](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf) 
-data onboard of Metop-A and Metop-B satellites
-* [AC SAF Level-3 GOME-2](./1_ltpy_v01_atmospheric_composition_overview.ipynb#records) 
-reprocessed and regridded data
-* [Copernicus Sentinel-5P](./1_ltpy_v01_atmospheric_composition_overview.ipynb#sentinel_5p) 
-data
+This course features the following data:
+* [AC SAF GOME-2 Level-2](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf) data onboard of Metop-A and Metop-B satellites
+* [AC SAF GOME-2 Level-3](./11_ltpy_atmospheric_composition_overview.ipynb#records) reprocessed and regridded data
+* [IASI Level-2](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf) data onboard of Metop-A and Metop-B satellites
+* [Copernicus Sentinel-5P](./11_ltpy_atmospheric_composition_overview.ipynb#sentinel_5p) data
+* [Copernicus Sentinel-3 OLCI](./11_ltpy_atmospheric_composition_overview.ipynb#sentinel3) data
+* [Copernicus Atmosphere Monitoring Service (CAMS)](./11_ltpy_atmospheric_composition_overview.ipynb#cams) data
 
-## Course structure
+
+## Course material
 The course follows a modular approach and offers the following modules:
 
-* ***0 - [Introduction to Python and Project Jupyter](./0_ltpy_v01_Intro_to_Python_and_Jupyter.ipynb)*** *(optional)*
+* ***0 - [Introduction to Python and Project Jupyter](./0_ltpy_Intro_to_Python_and_Jupyter.ipynb)*** *(optional)*
+
 
 * **1 - Overview of data and data access systems**
- * [1 - Atmospheric Composition data overview and acccess](./1_ltpy_v01_atmospheric_composition_overview.ipynb)
+ * [11 - Atmospheric Composition data overview and acccess](./11_ltpy_atmospheric_composition_overview.ipynb)
+ * [12 - WEkEO Harmonized Data Access API](./12_ltpy_WEkEO_harmonized_data_access_api.ipynb)
+
 
 * **2 - Load, browse and pre-process data**
- * [2.1.1 - AC SAF Level 2 data - Load and browse](./211_ltpy_v01_AC_SAF_L2_data.ipynb)
- * [2.1.2 - AC SAF Level 2 data - pre-process](./212_ltpy_v01_AC_SAF_L2_data.ipynb)
- * [2.2 - AC SAF Level 3 data](./22_ltpy_v01_AC_SAF_L3_data_products.ipynb)
- * [2.3 - Sentinel-5p Level 2 data](./23_ltpy_v01_Sentinel5p_L2_data.ipynb)
+ * [2.1.1 - AC SAF GOME-2 - Level 2 data - Load and browse](./211_ltpy_AC_SAF_GOME-2_L2_load_browse.ipynb)
+ * [2.1.2 - AC SAF GOME-2 - Level 2 data - Pre-process](./212_ltpy_AC_SAF_GOME-2_L2_preprocess.ipynb)
+ * [2.1.3 - IASI - Level 2 data - Load and browse](./213_ltpy_IASI_L2_load_browse.ipynb)
+ * [2.2 - AC SAF GOME-2 - Level 3 data](./22_ltpy_AC_SAF_GOME-2_L3.ipynb)
+ * [2.3 - Sentinel-5p Level 2 data](./23_ltpy_Sentinel5p_L2_data.ipynb)
+ * [2.4 - Copernicus Atmosphere Monitoring Service (CAMS) data](./24_ltpy_CAMS_data.ipynb)
+ * [2.5 - Sentinel-3 OLCI Level 2 data](./25_ltpy_Sentinel3_OLCI_L1.ipynb)
+
 
 * **3 - Data workflows and case studies**
- * [3.1 - AC SAF Level 2 case studies](./31_ltpy_v01_AC_SAF_L2_case_study.ipynb)
- * [3.2 - AC SAF Level 3 workflow examples](./32_ltpy_v01_AC_SAF_L3_case_study.ipynb)
+ * [3.1 - AC SAF GOME-2 - Level 2 data - Case studies](./31_ltpy_AC_SAF_GOME-2_L2_case_study.ipynb)
+ * [3.2 - AC SAF GOME-2 - Level 3 data - Workflow examples](./32_ltpy_AC_SAF_GOME-2_L3_case_study.ipynb)
+ * [3.3 - Arctic Fires Summer 2019 - Case Study](./33_ltpy_Arctic_Fires_case_study.ipynb)
+ * [3.4.1 - Antarctic ozone hole - Summer 2019 - Case Study](./341_ltpy_Ozone_hole_case_study.ipynb)
+ * [3.4.2 - Antarctic ozone hole - Summer 2019 - Animation](./342_ltpy_Ozone_hole_case_study_cams_animation.ipynb)
+
+<br>
+
+**NOTE:** Throughout the course, general functions to `load`, `re-shape`, `process` and `visualize` 
+the datasets are defined. These functions are re-used when applicable. 
+The [LTPy functions notebook](./ltpy_functions.ipynb) gives you an overview of 
+all the functions defined and used for the course.
+
+The notebook [12 - WEkEO Harmonized Data Access API](./12_ltpy_WEkEO_harmonized_data_access_api.ipynb) 
+makes use of functions defined in the [LTPy HDA API functions notebook](./ltpy_hda_api_functions.ipynb).
 
 
 ## Learning outcomes
@@ -68,8 +90,8 @@ into nbviewer.
 server. If you prefer this solution, you have to reproduce the settings. The following
 section provides you more information on how to reproduce the set up on your 
 local machine.
-* 3. **LTPy JupyterHub** - You can create a 
-[WEkEO account](https://www.wekeo.eu/user/register) and then log into the
+* 3. **LTPy JupyterHub** - You can create an 
+[account](http://wekeo-login.services.meeo.it/http://wekeo-login.services.meeo.it/wekeo-login.services.meeo.it) and then log into the
 [LTPy Jupyterhub](https://ltpy.adamplatform.eu).
 
 ## Reproduce LTPy on Atmospheric Compostion data locally
