@@ -28,15 +28,13 @@ This course features the following data:
 ## Course material
 The course follows a modular approach and offers the following modules:
 
-* ***0 - [Introduction to Python and Project Jupyter](./0_ltpy_Intro_to_Python_and_Jupyter.ipynb)*** *(optional)*
+***0 - [Introduction to Python and Project Jupyter](./0_ltpy_Intro_to_Python_and_Jupyter.ipynb)*** *(optional)*
 
-
-* **1 - Overview of data and data access systems**
+**1 - Overview of data and data access systems**
  * [11 - Atmospheric Composition data overview and acccess](./11_ltpy_atmospheric_composition_overview.ipynb)
  * [12 - WEkEO Harmonized Data Access API](./12_ltpy_WEkEO_harmonized_data_access_api.ipynb)
 
-
-* **2 - Load, browse and pre-process data**
+**2 - Load, browse and pre-process data**
  * [2.1.1 - AC SAF GOME-2 - Level 2 data - Load and browse](./211_ltpy_AC_SAF_GOME-2_L2_load_browse.ipynb)
  * [2.1.2 - AC SAF GOME-2 - Level 2 data - Pre-process](./212_ltpy_AC_SAF_GOME-2_L2_preprocess.ipynb)
  * [2.1.3 - IASI - Level 2 data - Load and browse](./213_ltpy_IASI_L2_load_browse.ipynb)
@@ -45,15 +43,13 @@ The course follows a modular approach and offers the following modules:
  * [2.4 - Copernicus Atmosphere Monitoring Service (CAMS) data](./24_ltpy_CAMS_data.ipynb)
  * [2.5 - Sentinel-3 OLCI Level 2 data](./25_ltpy_Sentinel3_OLCI_L1.ipynb)
 
-
-* **3 - Data workflows and case studies**
+**3 - Data workflows and case studies**
  * [3.1 - AC SAF GOME-2 - Level 2 data - Case studies](./31_ltpy_AC_SAF_GOME-2_L2_case_study.ipynb)
  * [3.2 - AC SAF GOME-2 - Level 3 data - Workflow examples](./32_ltpy_AC_SAF_GOME-2_L3_case_study.ipynb)
  * [3.3 - Arctic Fires Summer 2019 - Case Study](./33_ltpy_Arctic_Fires_case_study.ipynb)
  * [3.4.1 - Antarctic ozone hole - Summer 2019 - Case Study](./341_ltpy_Ozone_hole_case_study.ipynb)
  * [3.4.2 - Antarctic ozone hole - Summer 2019 - Animation](./342_ltpy_Ozone_hole_case_study_cams_animation.ipynb)
 
-<br>
 
 **NOTE:** Throughout the course, general functions to `load`, `re-shape`, `process` and `visualize` 
 the datasets are defined. These functions are re-used when applicable. 
@@ -83,15 +79,15 @@ GitLab, might appear not in a nice format, which make the learning process
 difficult.
 
 There are several ways how to use these modules:
-* 1. **[nbviewer](https://nbviewer.jupyter.org/)** - Static rendering of the 
+1. **[nbviewer](https://nbviewer.jupyter.org/)** - Static rendering of the 
 notebooks. Copy paste the link to the notebook [index_ltpy_v01.ipynb](./index_ltpy_v01.ipynb) 
 into nbviewer.
-* 2. **Clone this repo** and run the notebooks on your local Jupyter notebook
+2. **Clone this repo** and run the notebooks on your local Jupyter notebook
 server. If you prefer this solution, you have to reproduce the settings. The following
 section provides you more information on how to reproduce the set up on your 
 local machine.
-* 3. **LTPy JupyterHub** - You can create an 
-[account](http://wekeo-login.services.meeo.it/http://wekeo-login.services.meeo.it/wekeo-login.services.meeo.it) and then log into the
+3. **LTPy JupyterHub** - You can create an 
+account [here](http://wekeo-login.services.meeo.it/) and then log into the
 [LTPy Jupyterhub](https://ltpy.adamplatform.eu).
 
 ## Reproduce LTPy on Atmospheric Compostion data locally
@@ -100,12 +96,12 @@ following Python version and Python packages will be required:
 
 * Python version: **Python3**
 * Python packages:
- * [xarray](http://xarray.pydata.org/en/stable/index.html)
- * [netCDF4](https://unidata.github.io/netcdf4-python/netCDF4/index.html)
- * [h5py](https://pypi.org/project/h5py/)
- * [numpy](https://numpy.org/)
- * [matplotlib](https://matplotlib.org/)
- * [cartopy](https://scitools.org.uk/cartopy/docs/latest/)
+  * [xarray](http://xarray.pydata.org/en/stable/index.html)
+  * [netCDF4](https://unidata.github.io/netcdf4-python/netCDF4/index.html)
+  * [h5py](https://pypi.org/project/h5py/)
+  * [numpy](https://numpy.org/)
+  * [matplotlib](https://matplotlib.org/)
+  * [cartopy](https://scitools.org.uk/cartopy/docs/latest/)
 
 Python packages can be installed with `conda install <python_package_name>` or 
 `pip install <python_pacakage_name>`
@@ -114,13 +110,26 @@ The following **data on atmospheric composition** have to be downloaded:
 
 | Satellite | Data type | Parameter | Temporal coverage | Data Volume in GB
 |--- |---|---|---|---|
-|GOME-2 - Metop-2a|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |18-Aug-2019<br>19-Aug-2019<br>22-Aug-2019| 0.222<br>0.214<br>0.212 |
-|GOME-2 - Metop-2b|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |18-Aug-2019<br>19-Aug-2019<br>22-Aug-2019| 0.221<br>0.219<br>0.232 |
-|GOME-2 - Metop-2a|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |13-Aug-2018<br>16-Aug-2018<br>18-Aug-2018| 0.213<br>0.218<br>0.215 |
-|GOME-2 - Metop-2b|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |13-Aug-2018<br>16-Aug-2018<br>18-Aug-2018| 0.230<br>0.219<br>0.219 |
-|GOME-2 - Metop-2a|[Level-3 Data record](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |Feb-2007<br>to Dec-2012| 4.78 |
-|GOME-2 - Metop-2b|[Level-3 Data record](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |Jan-2013<br>to Nov-2017| 4.0 |
-|GOME-2 - Metop-2b|[Level-3 Data record](./1_ltpy_v01_atmospheric_composition_overview.ipynb#ac_saf_access)| `Tropical tropospheric Ozone`  |Jan-Dec 2018| 0.0051 |
-|Sentinel-5P TROPOMI|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#sentinel5p_access)| `Nitrogen Dioxide` - US/Canada  |13-Aug-2018<br>16-Aug-2018<br>18-Aug-2018| 1.35<br>1.37<br> - |
-|Sentinel-5P TROPOMI|[Level-2 Offline](./1_ltpy_v01_atmospheric_composition_overview.ipynb#sentinel5p_access)| `Nitrogen Dioxide` - South America  |19-Aug-2019<br>22-Aug-2019| 1.82<br>1.37 |
-| - | - | - | **Total**| **17.375 GB**|
+|GOME-2 - Metop-2a|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |18-Aug-2019<br>19-Aug-2019<br>22-Aug-2019| 0.222<br>0.214<br>0.212 |
+|GOME-2 - Metop-2b|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |18-Aug-2019<br>19-Aug-2019<br>22-Aug-2019| 0.221<br>0.219<br>0.232 |
+|GOME-2 - Metop-2a|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |13-Aug-2018<br>16-Aug-2018<br>18-Aug-2018| 0.213<br>0.218<br>0.215 |
+|GOME-2 - Metop-2b|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |13-Aug-2018<br>16-Aug-2018<br>18-Aug-2018| 0.230<br>0.219<br>0.219 |
+|GOME-2 - Metop-2a|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Ozone`  |10-Sep-2019| 0.017|
+|GOME-2 - Metop-2b|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Ozone`  |10-Sep-2019| 0.230|
+|GOME-2 - Metop-2b|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Aerosol Absorbing Index`  |23-Jul-2019| 0.106|
+|GOME-2 - Metop-2a|[Level-3 Data record](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |Feb-2007<br>to Dec-2012| 4.78 |
+|GOME-2 - Metop-2b|[Level-3 Data record](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Nitrogen Dioxide`  |Jan-2013<br>to Nov-2017| 4.0 |
+|GOME-2 - Metop-2b|[Level-3 Data record](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Tropical tropospheric Ozone`  |Jan-Dec 2018| 0.0051 |
+|Sentinel-5P TROPOMI|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#sentinel5p_access)| `Carbon Monoxide` - US/Canada  |13-Aug-2018<br>16-Aug-2018| 1.35<br>1.37|
+|Sentinel-5P TROPOMI|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#sentinel5p_access)| `Carbon Monoxide` - South America  |19-Aug-2019<br>22-Aug-2019| 1.82<br>1.37 |
+|Sentinel-5P TROPOMI|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#sentinel5p_access)| `Carbon Monoxide` - South America  |23-Jul-2019| 1.82 |
+|Sentinel-3 OLCI|[Level-1 EFR](./11_ltpy_atmospheric_composition_overview.ipynb#sentinel3)| `RGB` - Siberia  |25-Jul-2019| 0.7|
+|CAMS|[GFAS](./11_ltpy_atmospheric_composition_overview.ipynb#cams)| `Radiative Power`|23-Jul-2019<br>22-24 Oct-2019| 0.39<br>0.09 |
+|CAMS|[Greenhouse Gas Fluxes](./11_ltpy_atmospheric_composition_overview.ipynb#cams)| `CO2 Flux`|Jan 1979 - <br> Dec 2018| 0.24 |
+|CAMS|[Regional](./11_ltpy_atmospheric_composition_overview.ipynb#cams)| `Web Forecast`|10 May 2018 +1D| 0.0012 |
+|CAMS|[NRT Forecast](./11_ltpy_atmospheric_composition_overview.ipynb#cams)| `NRT Forecast Ozone`|10-Sep-2019 +5D| 0.005 |
+|CAMS|[NRT Forecast](./11_ltpy_atmospheric_composition_overview.ipynb#cams)| `NRT Forecast Total Column Carbon Monoxide`|23-Jul-2019 +5D| 0.02 |
+|IASI|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Ammonia`|12-Sep-2017| 0.02 |
+|IASI|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Total Column Carbon Monoxide`|23-Jul-2019| 1.4 |
+|IASI|[Level-2 Offline](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf_access)| `Ozone`|10-Sep-2019| 10.0 |
+| - | - | - | **Total**| **32.37 GB**|
