@@ -1,0 +1,5 @@
+EUMETSAT under the framework of EUMETSAT / Copernicus contract No. 19/218240.
+
+EUMETSAT Project officer: Federico Fierli
+CfO Assignee: MEEO s.r.l / Simone Mantovani
+Jupyter notebook developer: Julia Wagemann

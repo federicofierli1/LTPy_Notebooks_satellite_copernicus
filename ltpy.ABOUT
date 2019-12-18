@@ -1,0 +1,11 @@
+id: ltpy
+name: Learning Tool for Python (LTPy) on Atmospheric Composition Data
+description: This repository stores Jupyter notebook modules as part of the Python-based training course on Atmospheric Composition data.
+home_url: http://www.eumetsat.int
+copyright: EUMETSAT
+
+# File(s) this ABOUT file refers to
+about_resource: /
+
+# when was this ABOUT file created or last updated?
+date: 2019-12-18
