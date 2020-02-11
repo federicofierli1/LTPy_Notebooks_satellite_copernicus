@@ -14,9 +14,6 @@ to get a short introduction to Jupyter notebooks and their benefits.
 
 ## Data on Atmospheric Composition
 This course features the following data:
-
-This course features the following data:
-This course features the following data:
 * [AC SAF GOME-2 Level-2](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf) data onboard of Metop-A and Metop-B satellites
 * [AC SAF GOME-2 Level-3](./11_ltpy_atmospheric_composition_overview.ipynb#records) reprocessed and regridded data
 * [IASI Level-2](./11_ltpy_atmospheric_composition_overview.ipynb#ac_saf) data onboard of Metop-A and Metop-B satellites
